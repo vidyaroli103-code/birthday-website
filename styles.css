@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fecfef, #fecfef);
+    color: #333;
+    overflow: hidden;
+}
+
+#loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fff;
+    z-index: 1000;
+}
+
+#ui {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    font-size: 14px;
+}
+
+#ui h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#countdown {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#wishesList {
+    max-height: 200px;
+    overflow-y: scroll;
+    margin-top: 10px;
+}
+
+#canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    #ui {
+        top: 10px;
+        left: 10px;
+        max-width: 250px;
+        font-size: 12px;
+    }
+    #ui h1 {
+        font-size: 18px;
+    }
+}
